@@ -1,0 +1,32 @@
+https://classroom.udacity.com/courses/ud210/lessons/1343a461-102f-41e1-b505-bf9ec62f427b/concepts/f9afb6be-6d38-4c0d-a10e-c23a2fe053f8
+
+ /*GOAL: Practice writing to the console and learn 
+ **the variables types available in C++
+ **Print the sizes of each variable to the console.
+ **Print them in the following order:
+ **int, short, long, char, float, double, bool
+ */
+
+ #include <iostream>
+ int main()
+ {
+     using namespace std;
+     cout<<"int size = "<<sizeof(int)<<"\n";
+     cout<<"short size = "<<sizeof(short)<<"\n";
+     cout<<"long size = "<<sizeof(long)<<"\n";
+     cout<<"char size = "<<sizeof(char)<<"\n";
+     cout<<"float size = "<<sizeof(float)<<"\n";
+     cout<<"double size = "<<sizeof(double)<<"\n";
+     cout<<"bool size = "<<sizeof(bool)<<"\n";
+     return 0;
+ }
+ 
+ Output:
+ 
+int : 4
+short : 2
+long : 8
+char : 1
+float : 4
+double : 8
+bool : 1
