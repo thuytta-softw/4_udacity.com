@@ -1,4 +1,6 @@
+https://classroom.udacity.com/courses/ud210/lessons/1343a461-102f-41e1-b505-bf9ec62f427b/concepts/60086a00-e0b3-417f-8f73-77fd16314b9e
 
+https://www.youtube.com/watch?v=hAluLUqaB0s&t=375s
 
 thuy_header.h
 
@@ -9,8 +11,7 @@ using namespace std;
 
 
 
-
-// File Handling
+// File Handling, we can use fstream instead ifstream or ofstream 
 thuy_header.cpp
 
 #include "thuy_header.h"
@@ -18,14 +19,48 @@ thuy_header.cpp
 int main() 
 {
 // open and writting into file and if the file is not exist, it can create file by itself.
-	ofstream t_send;
-  	t_send.open ("hello.txt");
-	t_send << "Hello everyone \n";
-	t_send.close();
+	ofstream t_write;
+  	t_write.open ("hello.txt");
+	t_write << "Hello everyone \n";
+	t_write.close();
+
+
+// open and handling file with number, the operator will cut out all the blank space
+
+	string t;
+	
+	ifstream t_read;
+	t_read.open("hello.txt");
+	t_read >> t;
+	
+	while (!t_read.eof())
+	{
+		cout << t;
+		t_read >> t;
+	}
+	t_read.close();
+	
+// open and handling file with string
+
+	string s;
+	
+	ifstream t_read;
+	t_read.open("hello.txt");
+		
+	while (getline( t_read , s ))
+	{
+		cout << s;
+		
+	}
+	t_read.close();
+	
 
 	system("pause");
 	return 0;
 }
+
+
+
 
 
 
