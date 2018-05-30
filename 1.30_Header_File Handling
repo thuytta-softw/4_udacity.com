@@ -10,16 +10,18 @@ using namespace std;
 
 
 
-
+// File Handling
 thuy_header.cpp
 
 #include "thuy_header.h"
 
 int main() 
 {
+// open and writting into file and if the file is not exist, it can create file by itself.
 	ofstream t_send;
-  t_send.open ("hello.txt");
+  	t_send.open ("hello.txt");
 	t_send << "Hello everyone \n";
+	t_send.close();
 
 	system("pause");
 	return 0;
