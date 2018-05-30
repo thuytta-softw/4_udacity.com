@@ -35,7 +35,7 @@ int main()
 	
 	while (!t_read.eof())
 	{
-		cout << t;
+		cout << t  << "\n";
 		t_read >> t;
 	}
 	t_read.close();
@@ -49,7 +49,7 @@ int main()
 		
 	while (getline( t_read , s ))
 	{
-		cout << s;
+		cout << s << "\n";
 		
 	}
 	t_read.close();
