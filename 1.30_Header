@@ -1,0 +1,29 @@
+
+
+thuy_header.h
+
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+
+
+
+
+
+thuy_header.cpp
+
+#include "thuy_header.h"
+
+int main() 
+{
+	ofstream t_send;
+  t_send.open ("hello.txt");
+	t_send << "Hello everyone \n";
+
+	system("pause");
+	return 0;
+}
+
+
+
