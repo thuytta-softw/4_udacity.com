@@ -1,0 +1,6 @@
+
+https://classroom.udacity.com/courses/ud210/lessons/1343a461-102f-41e1-b505-bf9ec62f427b/concepts/33c8c2a1-2690-42ff-b89d-663d93aa93d3
+
+"g++", "-o main.out", "main.cpp"
+"./main.out", stdin=open("input.txt", "r")
+
