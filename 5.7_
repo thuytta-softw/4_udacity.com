@@ -1,0 +1,35 @@
+https://classroom.udacity.com/courses/ud210/lessons/7761613e-1edd-4ccc-bb67-6faeeac7d97e/concepts/eee93b6a-9c5a-4594-9fe3-1bfde06b715b
+
+/*Goal: Find out why you care about pointers*/
+
+#include<iostream>
+#include<string>
+
+int main ()
+{
+  int * pointerI;
+  int number;
+  char character;
+  char * pointerC;
+  std::string sentence;
+  std::string *pointerS;
+  
+  pointerI = &number;
+  *pointerI = 45;
+  
+  pointerC = &character;
+  *pointerC = 'f';
+  
+  pointerS = &sentence;
+  *pointerS = "Hey look at me, I know pointers!";
+  
+  std::cout << "number = "<<number<<"\n";
+  std::cout<<"character = "<<character<<"\n";
+  std::cout<<"sentence = "<<sentence<<"\n";
+
+  return 0;
+}
+
+number = 45
+character = f
+sentence = Hey look at me, I know pointers!
